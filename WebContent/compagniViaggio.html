@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body{background-color: #f2f2f2;
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-size:17px;}
+h1{text-align:center;}
+h3{text-align:center;}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+   border-radius: 8px;
+  border: 5px solid #8c8c8c;
+  border-collapse: collapse;
+  padding: 0px;
+  max-width: 150%;
+  height: auto;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150%;
+  width: 150%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: green;
+  border-radius: 8px;
+  border: 5px solid #8c8c8c;
+  border-collapse: collapse;
+  padding: 0px;
+  max-width: 150%;
+  height: auto;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<table>
+
+<h1>Compagni di Viaggio</h1>
+<tr>
+	<!-- -------------------------Compagno1----------------------------  -->
+	<td>
+		<div class="container">
+  			<img src="images/Compagni/Paolo.jpg" alt="Avatar" class="image">
+  			<div class="overlay">
+    		<div class="text"><h3>Paolo</h3> <p>Caciarone e scansafatiche, se non fosse sato per noi avrebbe perso tuti i treni</p></div>
+  			</div>
+		</div>
+	</td>
+	<!-- --------------------------------------------------------------- -->
+	
+	<!-- -------------------------Compagno2----------------------------  -->
+	<td>
+		<div class="container">
+  			<img src="images/Compagni/Giulia.png" alt="Avatar" class="image">
+  			<div class="overlay">
+    		<div class="text"><h3>Giulia</h3> <p>La mamma del gruppo, é stata lei a tenerci coesi per tutto il viaggio</p></div>
+  			</div>
+		</div>
+	</td>
+	<!-- --------------------------------------------------------------- -->
+	
+	<!-- -------------------------Compagno3----------------------------  -->
+	<td>
+		<div class="container">
+  			<img src="images/Compagni/Luca.png" alt="Avatar" class="image">
+  			<div class="overlay">
+    		<div class="text"><h3>Luca</h3> <p>Siao migliori amici sin dall'infanzia, sempre solare e pieno di energie</p></div>
+  			</div>
+		</div>
+	</td>
+	<!-- --------------------------------------------------------------- -->
+	
+	
+	
+</tr>
+
+</table>
+</body>
+</html>
